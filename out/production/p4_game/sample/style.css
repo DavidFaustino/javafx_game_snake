@@ -1,0 +1,5 @@
+#panePlay {
+    -fx-background-image: url(./field.png);
+    -fx-background-size: 20 20;
+    -fx-background-repeat: repeat;
+}

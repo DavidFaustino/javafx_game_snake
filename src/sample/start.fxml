@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="400.0" maxWidth="400.0" minHeight="400.0" minWidth="400.0" prefHeight="400.0" prefWidth="400.0" spacing="25.0" style="-fx-background-color: #879179;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+    <children>
+        <Label alignment="TOP_LEFT" contentDisplay="CENTER" text="Game Snake - P4">
+            <font>
+                <Font name="Monospaced Bold" size="43.0" />
+            </font>
+            <VBox.margin>
+                <Insets bottom="25.0" />
+            </VBox.margin>
+        </Label>
+        <Button mnemonicParsing="false" onAction="#startBtn" text="Start" />
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+            <children>
+                <Button fx:id="speedBt" contentDisplay="CENTER" mnemonicParsing="false" text="Speed" />
+                <Label fx:id="labelSpeed" lineSpacing="10.0" text="Medium" />
+                <Button fx:id="endlessBtn" mnemonicParsing="false" text="Endless field" />
+            </children>
+        </HBox>
+        <Button mnemonicParsing="false" text="Leaderboard" />
+        <Button fx:id="quit" mnemonicParsing="false" onAction="#quit" text="Quit" />
+    </children>
+</VBox>
